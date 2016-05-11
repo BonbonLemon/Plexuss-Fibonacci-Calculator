@@ -24,9 +24,8 @@ var calculateFibs = function (length) {
   } else {
     fibs = [0, 1];
     for (var i = 2; i < length; i++) {
-      // debugger;
       var nextFib = fibs[i - 2] + fibs[i - 1];
-      fibs.push(nextFib)
+      fibs[i] = nextFib;
     }
   }
 
